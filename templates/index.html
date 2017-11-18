@@ -17,6 +17,9 @@
     <!-- Theme CSS -->
     <link href="{{ url_for('static', filename='vendor/freelancer/css/freelancer.min.css') }}" rel="stylesheet">
 
+    <!-- iFrame Video CSS -->
+    <link href="{{ url_for('static', filename='site/css/video-iframes.css') }}" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -370,7 +373,7 @@
                             <p><strong>Engine:</strong> Unity3D 2017.1</p>
                             <p><strong>Image Assets:</strong> Photoshop CC</p>
                             <p><strong>Animation & Rigging:</strong> Spine</p>
-                            <iframe frameborder="0" src="https://itch.io/embed/148635?linkback=true" width="552" height="167"></iframe>
+                            <iframe src="https://itch.io/embed/148635" width="208" height="167"></iframe>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="https://itch.io/jam/cga-jam">CGA JAM</a>
@@ -411,6 +414,10 @@
                             <p><a href="https://github.com/SrzStephen">Stephen Mott</a> and myself designed this small self powered peripheral device using an Arduino Nano to connect to the Intel 101 Central station via low energy Bluetooth to stream accelerometer data.</p>
                             <img src="{{ url_for('static', filename='site/img/projects/hackathon-intel/screenshot.gif') }}" class="img-responsive img-centered" alt="">
                             <p>The source code for this project can be found on our <a href="https://github.com/t04glovern/intel-101-hackathon">GitHub</a></p>
+                            <h4>Demo Video</h4>
+                            <div class="intrinsic-container intrinsic-container-16x9">
+                                <iframe src="https://www.youtube.com/embed/cZSKmXhSxig" allowfullscreen></iframe>
+                            </div>
                             <h3>Software and Development</h3>
                             <p><strong>Engine:</strong> Unity3D 2017.1</p>
                             <p><strong>Backend:</strong> Flask, Node-Red, Bluez (python)</p>
@@ -548,9 +555,13 @@
                             <p>Trace Invaders was a challenge my team and I worked on for the <a href="https://2017.spaceappschallenge.org/challenges/our-ecological-neighborhood/trace-invaders/teams/wildspace/stream"> 2017 NASA SpaceApps Hackathon</a>. I worked alongside another developer on the Unity3D application to support our teams idea.</p>
                             <p>Our solution aimed to provide a social platform that used crowdsourcing methods to collect data and analytics about invasive species. This data could then be used with the Google Tango mixed relatity suite to create an interactive experience for students in schools</p>
                             <h4>Google Tango - Mixed Reality</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/izwHmzUCLqM" frameborder="0" allowfullscreen></iframe>
+                            <div class="intrinsic-container intrinsic-container-16x9">
+                                <iframe src="https://www.youtube.com/embed/izwHmzUCLqM" allowfullscreen></iframe>
+                            </div>
                             <h4>Vuforia AR</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/D4iMffitcqA" frameborder="0" allowfullscreen></iframe>
+                            <div class="intrinsic-container intrinsic-container-16x9">
+                                <iframe src="https://www.youtube.com/embed/D4iMffitcqA" allowfullscreen></iframe>
+                            </div>
                             <h3>Software and Development</h3>
                             <p>Unity3D</p>
                             <p>Google Tango SDK</p>
@@ -594,7 +605,9 @@
                             <h3>Description</h3>
                             <p>Fluffy Finder aims to help people find animals that need love using Amazon LEX, Lambda and Slack chat integration. I developed it for the <a href="https://devpost.com/software/fluffy-finder">AWS Chatbot Challenge</a>.</p>
                             <h4>Demo Video</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/N8_wVGT9JvI" frameborder="0" allowfullscreen></iframe>
+                            <div class="intrinsic-container intrinsic-container-16x9">
+                                <iframe src="https://www.youtube.com/embed/N8_wVGT9JvI" allowfullscreen></iframe>
+                            </div>
                             <h3>Software and Development</h3>
                             <p>Amazon Lex - Conversational Interface & NLP</p>
                             <p>Slack Messenger API (Webhook -> Lex)</p>
@@ -638,7 +651,9 @@
                             <h3>Description</h3>
                             <p>MediSense is a Software/Hardware hybrid, that aims to make medical research highly affordable and available to anyone. We developed it for the <a href="https://devpost.com/software/aws-iot-hackathon">AWS Chatbot Challenge</a>.</p></p>
                             <h4>Demo Video</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rxURwf7VXik" frameborder="0" allowfullscreen></iframe>
+                            <div class="intrinsic-container intrinsic-container-16x9">
+                                <iframe src="https://www.youtube.com/embed/rxURwf7VXik" allowfullscreen></iframe>
+                            </div>
                             <h3>Software Development</h3>
                             <p>NodeRed</p>
                             <p>AWS - Kinesis</p>
@@ -690,7 +705,7 @@
                             <p><strong>Engine:</strong> Unity3D 2017.1</p>
                             <p><strong>Image Assets:</strong> Photoshop CC</p>
                             <p><strong>Animation & Rigging:</strong> Spine</p>
-                            <iframe frameborder="0" src="https://itch.io/embed/146957?linkback=true" width="552" height="167"></iframe>
+                            <iframe src="https://itch.io/embed/146957" width="208" height="167"></iframe>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="https://itch.io/jam/bscotch100">Butterscotch ShenaniJam</a>
@@ -730,7 +745,9 @@
                             <h3>Description</h3>
                             <p>KLOG was the Software/Hardware solution our team developed for the <a href="https://2017.spaceappschallenge.org/challenges/our-ecological-neighborhood/trace-invaders/teams/wildspace/stream">2017 Digital Tribes Hardware Challenge</a>.</p>
                             <h4>KLOG - Ad-Hoc Mesh Network Distributed Safety Device</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJyF-G2UYdc" frameborder="0" allowfullscreen></iframe>
+                            <div class="intrinsic-container intrinsic-container-16x9">
+                                <iframe src="https://www.youtube.com/embed/ZJyF-G2UYdc" allowfullscreen></iframe>
+                            </div>
                             <h3>Network Engineering</h3>
                             <p>B.A.T.M.A.N Routing Protocol</p>
                             <p>Ad-Hoc Mode Network</p>
@@ -774,6 +791,9 @@
 
     <!-- Theme JavaScript -->
     <script src="{{ url_for('static', filename='vendor/freelancer/js/freelancer.min.js') }}"></script>
+
+    <!-- Modal Controller for Video -->
+    <script src="{{ url_for('static', filename='site/js/modal-vid.js') }}"></script>
 
 </body>
 
