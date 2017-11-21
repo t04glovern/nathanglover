@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+import os
+from flask import Flask, render_template, request, send_from_directory
 from flask_mail import Mail, Message
 
 import config
@@ -46,6 +47,24 @@ def send_mail():
 
     mail.send(msg)
     return "Sent"
+
+
+@app.route('/keybase.txt')
+def keybase():
+    return send_from_directory(
+        os.path.join(app.root_path, 'static'),
+        'keybase.txt',
+        mimetype='text/plain'
+    )
+
+
+@app.route('/.well-known/keybase.txt')
+def keybase_well_known():
+    return send_from_directory(
+        os.path.join(app.root_path, 'static'),
+        'keybase.txt',
+        mimetype='text/plain'
+    )
 
 
 if __name__ == '__main__':
