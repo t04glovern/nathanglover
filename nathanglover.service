@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve nathanglover.com
+After=network.target
+
+[Service]
+User=nathan
+Group=www-data
+WorkingDirectory=/home/nathan/Production/nathanglover
+Environment="PATH=/home/nathan/.virtualenvs/flask-python3.6.3-dev/bin"
+ExecStart=/home/nathan/.virtualenvs/flask-python3.6.3-dev/bin/gunicorn --workers 3 --bind unix:nathanglover.sock -m 007 wsgi:app
+
+[Install]
+WantedBy=multi-user.target
