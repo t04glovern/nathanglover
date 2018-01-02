@@ -28,7 +28,7 @@ etherscan_api = accounts.Account(address=eth_wallet_address, api_key=etherscan_a
 Ethereum Table
 '''
 
-
+'''
 class EthTable(Table):
     #tx_hash = Col('TxHash')
     #tx_age = Col('Age')
@@ -68,7 +68,7 @@ for transaction in eth_transactions:
 
 # Populate the table with the transaction objects
 eth_table = EthTable(table_transactions, table_id='eth_table', classes=['table-responsive', 'table'])
-
+'''
 
 '''
 Ethereum Price
@@ -84,7 +84,7 @@ Web Page Routes
 
 @app.route("/", methods=['GET'])
 def landing():
-    return render_template("index.html", eth_table=eth_table, eth_value=eth_value, eth_wallet=config.ETH_WALLET_ADDRESS)
+    return render_template("index.html", eth_value=eth_value, eth_wallet=config.ETH_WALLET_ADDRESS)
 
 
 @app.route("/ajax/send_mail", methods=['POST'])

@@ -119,6 +119,7 @@
     </div>
 </header>
 
+<!--
 <section id="ethereum">
     <div class="container">
         <div class="col-lg-12 text-center">
@@ -127,22 +128,7 @@
         </div>
     </div>
 </section>
-
-
-<section id="ethereum-price" class="success">
-    <div class="container">
-        <div class="col-lg-12 text-center">
-            <div>
-                <h3>Wallet Address: </h3>
-                {{ eth_wallet }}
-            </div>
-            <div>
-                <h3>Current Value: </h3>
-                {{ eth_value }}
-            </div>
-        </div>
-    </div>
-</section>
+-->
 
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
@@ -272,7 +258,23 @@
                     driven to design, implement and support front and backend software solutions.</p>
             </div>
             <div class="col-lg-4">
-                <p>I enjoy working with Embedded systems and have a strong desire to expand the world of IoE</p>
+                <p>I enjoy working with Embedded systems and have a strong desire to expand the world of IoT/Sensor
+                    networks. In my freetime I enjoy embracing new Cryptocurrenies.</p>
+            </div>
+        </div>
+        <hr class="star-light">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2 text-center">
+                <div>
+                    <h3>Wallet Address: </h3>
+                    {{ eth_wallet }}
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div>
+                    <h3>Current Value: </h3>
+                    {{ eth_value }}
+                </div>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <a href="{{ url_for('static', filename='site/files/nathan-glover-cv.pdf') }}"
