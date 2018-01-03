@@ -74,7 +74,7 @@ eth_table = EthTable(table_transactions, table_id='eth_table', classes=['table-r
 Ethereum Price
 '''
 
-eth_value = int(etherscan_api.get_balance()) / config.WEI_DEVIDER
+eth_value = int(etherscan_api.get_balance()) / config.WEI_DIVIDER
 
 
 '''
