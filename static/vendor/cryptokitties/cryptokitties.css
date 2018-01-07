@@ -1,0 +1,31 @@
+.image {
+  width: 90%;
+  height: auto;
+}
+.kittyCard {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-left: -7%;
+  margin-right: -7%;
+}
+.wellColor {
+  background-color: white !important;
+  padding-left: 2.3%;
+  padding-right: 2.3%;
+}
+.kittyTextID{
+  color: #2a2825;
+  font-family: Helvetica,Arial,sans-serif;
+}
+.details{
+  font: Helvetica,Arial,sans-serif;
+  color: #82817d;
+}
+.textbox{
+  padding-bottom: 5%;
+}
+.logo {
+  width: 200px;
+  height: auto;
+  padding-bottom: 1%;
+}
