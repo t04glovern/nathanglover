@@ -259,13 +259,16 @@
                     {{ eth_wallet }}
                 </div>
             </div>
+        <div class="row">
             <div class="col-lg-4 text-center">
                 <div>
                     <h3>Current Value: </h3>
                     {{ eth_value }} ETH
                 </div>
             </div>
-            <hr class="star-light">
+        </div>
+        <hr class="star-light">
+        <div class="row">
             <div id="cryptokitties"></div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <a href="{{ url_for('static', filename='site/files/nathan-glover-cv.pdf') }}"
