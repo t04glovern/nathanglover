@@ -108,20 +108,28 @@
     </div>
 </header>
 
-<!--
-<section id="ethereum">
-    <div class="container">
-        <div class="col-lg-12 text-center">
-            <h2>Ethereum Transactions</h2>
-            {{ eth_table }}
-        </div>
-    </div>
-</section>
--->
-
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
     <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Active Projects</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ url_for('static', filename='site/img/projects/dapp-kittycoin-club/display-image.png') }}"
+                         class="img-responsive" alt="KittyCoin Club">
+                </a>
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>Portfolio</h2>
@@ -269,13 +277,13 @@
         </div>
         <hr class="star-light">
         <div class="row">
-            <div id="cryptokitties"></div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <a href="{{ url_for('static', filename='site/files/nathan-glover-cv.pdf') }}"
                    class="btn btn-lg btn-outline">
                     <i class="fa fa-download"></i> Download Resume
                 </a>
             </div>
+        </div>
         </div>
     </div>
 </section>
@@ -845,7 +853,7 @@
                              class="img-responsive img-centered" alt="">
                         <h3>Description</h3>
                         <p>KLOG was the Software/Hardware solution our team developed for the <a
-                                href="https://2017.spaceappschallenge.org/challenges/our-ecological-neighborhood/trace-invaders/teams/wildspace/stream">2017
+                                href="https://portal.unearthed.solutions/team-submissions/34">2017
                             Digital Tribes Hardware Challenge</a>.</p>
                         <h4>KLOG - Ad-Hoc Mesh Network Distributed Safety Device</h4>
                         <div class="intrinsic-container intrinsic-container-16x9">
@@ -865,6 +873,53 @@
                             </li>
                             <li>Date:
                                 <strong>July 2017
+                                </strong>
+                            </li>
+                            <li>Service:
+                                <strong>Development
+                                </strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>KittyCoin Club - DApp</h2>
+                        <hr class="star-primary">
+                        <img src="{{ url_for('static', filename='site/img/projects/dapp-kittycoin-club/screenshot.png') }}"
+                             class="img-responsive img-centered" alt="">
+                        <h3>Description</h3>
+                        <p>Donation site for cats in foster care built on smart contracts.</p>
+                        <p>The source code for this project can be found on my <a href="https://github.com/fluffycatware/kittycoin-club">GitHub Project Page</a></p>
+                        <h3>Distributed Applications</h3>
+                        <p>Ethereum Smart Contracts</p>
+                        <p>Solidity</p>
+                        <p>Truffle</p>
+                        <p>DApp Continuous integration</p>
+                        <ul class="list-inline item-details">
+                            <li>Client:
+                                <strong>Personal Development
+                                </strong>
+                            </li>
+                            <li>Date:
+                                <strong>Feb 2018
                                 </strong>
                             </li>
                             <li>Service:
@@ -914,14 +969,6 @@
 
     gtag('config', 'UA-71336829-4');
 </script>
-
-<!-- CryptoKitties -->
-<script src="{{ url_for('static', filename='vendor/cryptokitties/cryptokitties.js') }}"></script>
-<script>
-    const MY_ADDRESS = '0xb39274c9887d314ba65da9929f3d0e94893570a7';
-    $('#cryptokitties').cryptoCase(MY_ADDRESS);
-</script>
-
 </body>
 
 </html>
